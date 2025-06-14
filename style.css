@@ -1,0 +1,109 @@
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset default styles and apply a global font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Body Styling */
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #1B1A1F;
+}
+
+/* Currency Container */
+.currency-container {
+    background-color: #262626;
+    border-radius: 20px;
+    border: 1px solid #6b6b6b;
+}
+
+/* Heading Section */
+.heading {
+    padding: 20px;
+    border-bottom: 1px solid #6b6b6b;
+}
+
+.heading h1 {
+    font-size: 1.5rem;
+    color: #6b6b6d;
+}
+
+/* Currency form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 0px 20px 20px 0px;
+    position: relative;
+}
+
+/* Input and output container */
+.input-container, .output-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Input and output fields */
+#input, #output {
+    width: 600px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: 1px solid #6b6b6d;
+    border-radius: 10px;
+    background-color: #1e1e20;
+    color: #fff;
+}
+
+/* Dropdown (Currency Select) */
+#from, #to {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    background-color: #101010;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #6b6b6d;
+    border-radius: 15px;
+    outline: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Swap Button Styling */
+.uturn-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid #6b6b6d;
+    background-color: #1e1e20;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.uturn-icon:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(210, 210, 255, 0.05) 0px 1px 0px,
+                rgba(255, 255, 255, 0.1) 0px 1px 5px 0px;
+}

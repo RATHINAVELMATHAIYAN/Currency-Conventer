@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/a
+ll.min.css">
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="currency-container">
+        <!-- Heading Section -->
+        <div class="heading">
+            <h1>Currency Converter</h1>
+        </div>
+        <!-- Currency Conversion Form -->
+        <form id="currency">
+            <!-- Input Amount and Currency Selection -->
+            <div class="input-container">
+                <input type="number" id="input" name="input" placeholder="Enter
+amount">
+                <select name="from" id="from">
+                    <!-- Options will be dynamically added using JavaScript -->
+                </select>
+            </div>
+
+            <!-- Swap Icon for Conversion -->
+            <button type="submit" class="uturn-icon">
+                <i class="fa-solid fa-arrow-down"></i>
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+
+            <!-- Converted Output and Currency Selection -->
+            <div class="output-container">
+                <input id="output" name="output" readonly placeholder="Converted amount">
+                <select name="to" id="to">
+                    <!-- Options will be dynamically added using JavaScript -->
+                </select>
+            </div>
+        </form>
+    </div>
+    <!-- JavaScript File for Currency Conversion Logic -->
+    <script src="index.js"></script>
+</body>
+
+</html>
